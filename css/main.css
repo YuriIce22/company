@@ -1,16 +1,16 @@
 :root{
     --bg-color: #ebebeb;
     --nav-fundo: lightgray;
-    --texto-default: #444;
+    --texto-default: #000000;
     --titulo-color: #363636;
-    --nav-color: #444;
+    --nav-color: #444444;
     --nav-hover-color: #3fbbc0;
     --nav-mobile-bg: #ebebeb;
     --nav-dropdown-bg: #195052;
     --nav-dropdown-color: #ebebeb;
     --nav-dropdown-hover-color: #3fbbc0;
     --nav-bg-topbar: #3fbbc0;
-    --nav-color: #ebebeb;
+    --nav-color2: #ebebeb;
 }
 
  body {
@@ -19,14 +19,14 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;  
     transition: 0.3s;
 }
 
 .header {
     color: var(--texto-default);
     background: var(--bg-color);
-    box-shadow: ; /* VOLTAR AQUI  */
+    box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.2); 
 }
 
 .header .topbar {
@@ -48,3 +48,72 @@ a {
     margin-right: 8px
 }
 
+
+/* Nav Menu Desktop = Responsivo */
+@media (min-width: 1200px){
+    .navmenu{
+        padding: 0;
+    }
+    .navmenu ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .navmenu li{
+        position: relative;
+    }
+    .navmenu a{
+        color: var(--nav-color);
+        padding: 18px 15px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        white-space: nowrap;
+    }  
+    .navmenu li:hover>a,
+    .navmenu .active,
+    .navmenu .active:focus {
+        color: var(--nav-hover-color);
+    }
+    .navmenu .dropdown ul{
+        margin: 0;
+        padding: 10px 0;
+        background: var(--nav-dropdown-bg);
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        left: 14px;
+        top: 130%;
+        opacity: 0;
+        border-radius: 4px;
+        z-index: 99;
+    }
+    .navmenu .dropdown ul li{
+        min-width: 200px;
+    }
+    .navmenu .dropdown ul a{
+        padding: 10px 20px;
+        font-size: 15px;
+        text-transform: none;
+        color: var(--nav-dropdown-hover-color);
+    }
+    .navmenu .dropdown ui a i {
+        font-size: 12px;
+    }
+    .navmenu .dropdown ul a:hover,
+    .navmenu .dropdown ul .active:hover,
+    .navmenu .dropdown ul li:hover>a {
+        color: var(--nav-dropdown-color);
+    }
+    .navmenu .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+}
