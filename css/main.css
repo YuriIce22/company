@@ -1,3 +1,32 @@
+:root{
+    --bg-color: #ebebeb;
+    --nav-fundo: lightgray;
+    --texto-default: #444;
+    --titulo-color: #363636;
+    --nav-color: #444;
+    --nav-hover-color: #3fbbc0;
+    --nav-mobile-bg: #ebebeb;
+    --nav-dropdown-bg: #195052;
+    --nav-dropdown-color: #ebebeb;
+    --nav-dropdown-hover-color: #3fbbc0;
+    --nav-bg-topbar: #3fbbc0;
+    --nav-color: #ebebeb;
+}
  body {
-    background: ; /* Cor de fundo */
- }
+     background: var(--bg-color); /* Cor Fundo */
+     color: var(--texto-default); /* Cor dos Textos */
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header {
+    color: var(--texto-default);
+    background: var(--bg-color);
+    box-shadow: ; /* VOLTAR AQUI  */
+}
+.header .topbar {
+    backgroud: var(--nav-bg-topbar);
+}
