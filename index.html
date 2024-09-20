@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,8 +22,12 @@
         <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/swiper@9.4.0/swiper-bundle.min.css" rel="stylesheet">
 
+        <!-- CSS Main -->
+         <link rel="stylesheet" href="css/main.css">
+
     </head>
     <body>
+
         <header id="header" class="header"> 
         <!-- (começo) header = cabeçario -->
             <div class="topbar d-flex align-items-center"> 
@@ -46,9 +51,43 @@
                 <a jref="" class="logo d-flex align-items-center me-auto">
                     <img src="assets/img/logo.png" alt="logo principal">
                 </a>
-        
-            </div>
-        </header>
-        <!-- fim header -->
+
+                <!-- Menu -->
+                 <nav>
+                    <ul>
+                        <li> <a href=""> Home </a></li>
+                        <li> <a href=""> Sobre </a></li>
+                        <li> <a href=""> Serviços </a></li>
+                        <li> <a href=""> Departamento </a></li>
+                        <li> <a href=""> Carros </a> 
+                            <ul>
+                                <li> Opção 1 </li>
+                                <li> Submenu </li>
+                                    <ul>
+                                        <li> Submenu1 </li>
+                                        <li> Submenu2 </li>
+                                    </ul>
+                                    <li> Opção 3 </li>
+                                    <li> Opção 4 </li>
+                                    <li> Opção 5 </li>
+                                </li> <!-- Fim Submenu -->
+                            </ul> <!-- Fim Carros -->
+                        </li>
+                    </ul>
+
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"> </i>
+                 </nav>
+
+                 <a href="" class="cta-btn">
+                    Procure seu Carro!
+                 </a>
+
+            </div> 
+
+        </header> <!-- fim header -->
+
     </body>
 </html>
+
+
+
