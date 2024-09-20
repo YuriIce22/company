@@ -12,6 +12,7 @@
     --nav-bg-topbar: #3fbbc0;
     --nav-color: #ebebeb;
 }
+
  body {
      background: var(--bg-color); /* Cor Fundo */
      color: var(--texto-default); /* Cor dos Textos */
@@ -27,6 +28,23 @@ a {
     background: var(--bg-color);
     box-shadow: ; /* VOLTAR AQUI  */
 }
+
 .header .topbar {
-    backgroud: var(--nav-bg-topbar);
+    background: var(--nav-bg-topbar);
+    height: 40px;
 }
+
+.header .branding {
+    min-height: 60px;
+    padding: 10px 0;
+}
+
+.header .logo {
+    line-height: 1;
+}
+
+.header .logo img {
+    max-height: 36px;
+    margin-right: 8px
+}
+
