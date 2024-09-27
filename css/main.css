@@ -1,4 +1,4 @@
-:root {
+ :root {
   --background-color: #ebebeb;
   --nav-fundo: #dbdbdb;
   --texto-default: #444;
@@ -51,6 +51,16 @@ a {
 .header .logo img {
   max-height: 36px;
   margin-right: 8px;
+}
+
+.header .cta-btn,
+.header .cta-btn:focus{
+  color: #363636;
+  background-color: #3fbbc0;
+  font-size: 14px;
+  padding: 8px 20px;
+  margin: 0 5px 0 30px;
+  border-radius: 4px;
 }
 
 
@@ -307,9 +317,8 @@ a {
   padding-bottom: 30px;
   border-top: 4px solid red;
   z-index: 3;
-  margin-top: 300px;
+  margin-top: 370px;
   margin-bottom: 50px;
-
 }
 
 @media (max-height:500px), 
@@ -331,3 +340,42 @@ a {
   font-size: 36px;
   font-weight: 700;
 }
+
+.hero .carousel-control-prev{
+  justify-content: start;
+}
+.hero .carousel-control-next{
+  justify-content: end;
+}
+
+.hero .carousel-control-next-icon,
+.hero .carousel-control-prev-icon {
+  background: #3fbbc0;
+  font-size: 26px;
+  color: black;
+  border-radius: 50px;
+  transition: .3s;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .carousel-indicators{
+  cursor: pointer;
+  background: #444;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  overflow: hidden;
+  border: 0;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.hero .carousel-indicators.active{
+  opacity: 1;
+  background: red;
+}
+
