@@ -11,6 +11,7 @@
   --nav-dropdown-hover-color: #3fbbc0;
   --nav-bg-topbar: #3fbbc0;
   --nav-color2: #ebebeb;
+  --surface: white;
 }
 
 body {
@@ -288,13 +289,6 @@ a {
   object-fit: cover;
 }
 
-@media (max-height:500px), 
-(max-width:500px)  {
-  .hero .carousel {
-      min-height: 100vh;
-  }
-}
-
 .hero .carousel-item {
  position: absolute;
  inset: 0;
@@ -303,5 +297,37 @@ a {
  background-repeat: no-repeat;
  display: flex;
  justify-content: center;
+}
 
+.hero .container {
+  background: color-mix(in srgb, var(--surface), transparent 35%);
+  position: relative;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 4px solid red;
+  z-index: 3;
+  margin-top: 300px;
+  margin-bottom: 50px;
+
+}
+
+@media (max-height:500px), 
+(max-width:500px)  {
+  .hero .carousel {
+      min-height: 100vh;
+  }
+}
+
+@media (max-width: 1200px){
+  .hero .container {
+    margin-left: 50px;
+    margin-right: 50px;
+   } 
+}
+
+.hero h2{
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 700;
 }
