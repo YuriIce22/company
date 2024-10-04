@@ -422,3 +422,86 @@ transition: ease-in-out 0.3s;
 .feature-services .services-item:hover p {
   color: whitesmoke;
 }
+
+.feature-services .services-item:hover:before {
+  background: #3fbbc0;
+  inset: 0;
+  border-radius: 0px;
+}
+
+.feature-services .services-item:before{
+content: "";
+position: absolute;
+background: "";
+inset: 100% 0 0 0;
+transition: all 0.3s;
+z-index: -1;
+}
+
+/* ====================================
+# GLOBAL SECTION
+==================================== */
+
+section, 
+.section {
+  color: "";
+  background: var(--background-color);
+  padding: 60px 0;
+  
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 100px
+  }
+}
+
+  /*----------------------------
+# Global Sections
+-------------------------*/
+
+section,
+.section {
+  color: ;
+  background: #e0e0e0;
+  padding: 60px 0;
+}
+
+@media (max-width: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 100px;
+  }
+}
+
+/*--------------------------------
+# Global Section Titles - titulos
+----------------------------------------*/
+
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: black;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
