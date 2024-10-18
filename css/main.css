@@ -774,14 +774,14 @@ margin-top: 50px;
 
 /* Services // Serviços  */
 
-.services .services-item{
+.services .services-item {
   text-align: center;
   padding: 20px;
   transition: all ease-in-out 0.3s;
   height: 100%;
 }
 
-.services .services-item .icon{
+.services .services-item .icon {
   background: whitesmoke;
   color: #3fbbc0;
   margin: auto;
@@ -792,13 +792,12 @@ margin-top: 50px;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  transition: 0.3s;
   font-size: 32px;
-  transition: ease-in-out 5s;
+  transition: ease-in-out 0.3s;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.3);
 }
 
-.services .services-item h3{
+.services .services-item h3 {
   font-weight: 700;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -806,9 +805,12 @@ margin-top: 50px;
   transition: 0.3s;
   position: relative;
   color: #272727;
+  /* 
+  font-family: ; 
+   */
 }
 
-.services .services-item h3:after{
+.services .services-item h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -825,10 +827,48 @@ margin-top: 50px;
   margin-bottom: 0;
 }
 
-.services .services-item:hover{
-  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.8);
+.services .services-item:hover .icon {
+  box-shadow: 0px 0 40px rgba(11, 171, 234, 0.6);
 }
 
-.services .services-item:hover h3{
+.services .services-item:hover h3 {
   color: #2293a0;
+}
+
+/* Consulta // Forms */
+
+.consulta .email-form{
+  width: 100%;
+}
+
+.consulta .email-form .form-group{
+  padding-bottom: 8px;
+}
+
+.consulta .email-form input,
+.consulta .email-form textarea,
+.consulta .email-form select {
+  color: black;
+  background-color: white;
+/*   border-color: color-mix(in srgb, #01d2e9, transparent 80%);
+  border-radius: 0; */
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+
+.consulta .email-form input::placeholder,
+.consulta .email-form textarea::placeholder,
+.consulta .email-form select::placeholder {
+  color: black;
+  background-color: white;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px !important;
+}
+
+.consulta .email-form input:focus,
+.consulta .email-form textarea:focus,
+.consulta .email-form select:focus {
+border-color: red;
 }
