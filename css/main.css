@@ -872,3 +872,97 @@ margin-top: 50px;
 .consulta .email-form select:focus {
 border-color: red;
 }
+
+.consulta .email-form input,
+.consulta .email-form select{
+  height: 44px;
+}
+
+.consulta .email-form textarea {
+  padding: 10px 12px;
+}
+
+.consulta .email-form button{
+  background: #01d2e9;
+  color: whitesmoke;
+  border: 0;
+  padding: 10px 35px;
+  font-size: 20px;
+  transition: 0.4s;
+  border-radius: 6px;
+}
+
+.consulta .email-form button:hover{
+  background: #006b77;
+  /* color: ; */
+}
+
+/* FAQ =============== FAQ */
+
+.faq .faq-container .faq-item{
+  background: #ccc;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item h3{
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0 30px 0 0;
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq .faq-container .faq-item h3:hover{
+color: #00b0c4;
+}
+
+.faq .faq-container .faq-item .faq-content{
+  display: grid;
+  transition: 0.3s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.faq .faq-container .faq-item .faq-content p{
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
+.faq .faq-container .faq-item .faq-toggle{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 16px;
+  line-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #00cdcd;
+}
+
+.faq .faq-container .faq-item .faq-toggle:hover {
+  color: red;
+}
+
+.faq .faq-container .faq-active{
+  border-color: black;
+}
+
+.faq .faq-container .faq-active .faq-content {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.faq .faq-container .faq-active .faq-toggle{
+  transform: rotate(90deg);
+  color: #01d2e9;
+}
+
+
